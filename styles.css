@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+    background-color: wheat;
+}
+
+.parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 2;
+  }
+
+nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav .logo {
+    width: 15%;
+    height: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    margin-left: auto; 
+    margin-right: 5%;
+    white-space: nowrap;
+    justify-content: space-around;
+}
+
+nav .list {
+    padding: 0 3%;
+}
+
+nav button {
+    display: none;
+}
+
+.list a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    background-color: rgb(171, 42, 42);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner h2 {
+    font-weight: 200;
+}
+
+.about {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .banner {
+    background-image: url(images/music-production-header@1400x1050.jpg);
+    width: 80%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    padding-bottom: 15%;
+}
+
+.banner p {
+    width: 75%;
+    max-width: 97%;
+    min-width: 65%;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    text-shadow: 2px 2px black;
+}
+
+.banner .button {
+    background-color: brown;
+    padding: 1%;
+    margin-bottom: auto;
+    margin-top: 15%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    outline: 0px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.button:active {
+    background-color: darkred;
+}
+
+.media {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0%;
+    width: 80%;
+    background-color: rgb(171, 42, 42);
+    flex-wrap: wrap;
+}
+
+.container h2 {
+    margin-left: 2%;
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap;
+    min-width: 0;
+    font-size: 2em;
+}
+
+.media-kn {
+    width: 100%;
+    margin: 3% 0;
+}
+
+.media {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.media h1 {
+    font-weight: 200;
+}
+
+.media-container {
+    min-width: 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team {
+    width: 100%;
+    display: flex;
+    justify-content: space-around ;
+    font-family: 'Montserrat', sans sans-serif;
+}
+
+.team .container {
+    background-color: rgb(57, 132, 159);
+    display: flex;
+    justify-content: space-around;
+}
+
+.yoni {
+    width: 30%;
+    height: auto;
+    margin-top: 5%;
+}
+
+.yoni span {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.yoni img {
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(84, 84, 84);
+}
+
+.yoni .omer-box {
+    box-shadow: 2px 2px black;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container {
+   background-color: rgb(57, 132, 159);
+   padding: 10px;
+   align-items: center;
+   border-top: 2px solid brown;
+}
+
+.rr {
+    margin-right: auto;
+    margin-left: 3%;
+    font-weight: 200;
+    font-family: 'Montserrat', sans sans-serif;
+    font-size: 0.7em;
+}
+
+footer .button {
+    margin-right: 3%;
+    background-color: brown;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.5em;
+    color: white;
+    outline: 0px;
+    transition: 0.3s;
+}
+
+footer .button:hover {
+    font-size: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .media {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        font-size: 0.7em;
+    }
+
+    .media-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 300px;
+        align-items: space-around;
+        align-content: space-around;
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: none;
+    } 
+
+    nav .logo {
+        width: 25%;
+    }
+
+    nav button {
+        width: 7%;
+        border: none;
+        background-color: white;
+        margin-right: 5%;
+        transition: 0.3s;
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        border: none;
+    }
+
+    nav button:hover {
+        cursor: pointer;
+    }
+
+    nav button:active {
+        transform: rotate(90deg);
+    }
+
+    nav button::after {
+        transform: rotate(90deg);
+    }
+
+    .yoni {
+        width: 40%;
+        font-size: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 1410px) {
+    .about .banner {
+        background-size: cover;
+        background-position-y: 5%;
+    }
+
+
+}
+
+@media only screen and (min-width: 937px) {
+    .about {
+        height: 130%;
+    }
+
+    .media-container {
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 937px) {
+    .media-container {
+        flex-direction: column;
+        align-items: space-around;
+        align-content: space-around;
+        margin-left: auto;
+        max-width: 300px;
+    }
+
+    .yoni {
+        width: 40%;
+        font-size: 0.7em;
+    }
+}
